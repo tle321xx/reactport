@@ -39,7 +39,6 @@
         opacity: 0.6;
       }
   
-      
     }
     img {
       margin-left: 1200px;
@@ -124,5 +123,15 @@
       bottom: auto;
       left: 0;
       margin: auto;
+    }
+
+    img {
+      margin-left: 1200px;
+      margin-top: 100px;
+      opacity: 0;
+      width: 500px;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-delay: 1.4s;
     }
   }
