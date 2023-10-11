@@ -70,7 +70,6 @@ const Home = () => {
               strArray={welcome}
               idx={13}
             />
-            
             <br />
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>

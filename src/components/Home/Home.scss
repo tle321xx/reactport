@@ -41,7 +41,7 @@
   
     }
     img {
-      margin-left: 1200px;
+      margin-left: 900px;
       margin-top: 100px;
       opacity: 0;
       width: 500px;
@@ -83,7 +83,7 @@
   
   
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1200px) and (max-width: 768px) {
     .tags,
     .home-page h1:before,
     .home-page h1:after {
