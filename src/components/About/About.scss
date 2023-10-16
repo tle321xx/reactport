@@ -79,3 +79,15 @@
       transform: rotateX(90deg);
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .about-page {
+      .text-zone{
+        margin-top: 50px;
+      }
+    }
+    .stage-cube-cont{
+      width: 100%;
+      margin-top: 400px;
+    }
+  }

@@ -61,8 +61,6 @@ const Home = () => {
     <>
       <Loader type="pacman" />
       <div className="container home-page">
-      <img src={profile} alt='profile-img' />
-
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -92,8 +90,9 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
-          
-
+        </div>
+        <div className="img-container">
+          <img src={profile} alt="profile-img" className="image" />
         </div>
       </div>
     </>
