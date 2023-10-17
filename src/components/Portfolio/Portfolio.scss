@@ -111,3 +111,21 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    h1.page-title{
+        margin-top: 100px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1.page-title{
+        margin-top: 100px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1.page-title{
+        margin-top: 100px !important;
+    }
+}

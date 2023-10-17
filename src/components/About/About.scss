@@ -80,14 +80,42 @@
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1200px) {
     .about-page {
       .text-zone{
-        margin-top: 50px;
+        width: 500px !important;
+        margin-left: 10% !important;
+        top: 250px !important;
       }
     }
     .stage-cube-cont{
       width: 100%;
       margin-top: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .about-page {
+      .text-zone{
+      margin-top: 20% !important;
+        width: 75% !important;
+      }
+    }
+    .stage-cube-cont{
+      width: 100%;
+      margin-top: 400px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .about-page {
+      .text-zone{
+        margin-top: 35% !important;
+      }
+    }
+    .stage-cube-cont{
+      width: 100%;
+      margin-top: 400px;
+      left: 30% !important;
     }
   }

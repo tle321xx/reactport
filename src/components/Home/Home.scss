@@ -1,4 +1,6 @@
 .home-page {
+  display: flex;
+  flex-wrap: wrap;
   .text-zone {
     position: absolute;
     left: 10%;
@@ -6,8 +8,9 @@
     transform: translateY(-50%);
     width: 80%; /* Increase width for larger screens */
     max-width: 600px; /* Set a maximum width for smaller screens */
-    overflow-y: auto;
     max-height: 1000px;
+    overflow-y: auto;
+    
   }
 
   h1 {
@@ -86,9 +89,85 @@
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
+  }
 
+  .home-page {
+    // grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    .text-zone {
+    // left: 250px;
+    top: 20px;
+    height: 300px;
+    transform: none;
+    gap: 10px;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }}
+
+  h1{
+    font-size: 45px !important;
+  }
+
+  .home-page .flat-button {
+    display: none;
+  }
+  img {
+    // display: none;
+    position: absolute;
+    left: 15% !important;
+    padding-top:280px !important;
+    // height: 560px !important;
+    animation: none;
+  }
+}
 
 @media only screen and (max-width: 768px) {
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
+  }
+
+  .home-page {
+    // display: grid;
+    // grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    .text-zone {
+    position: relative;
+    width: 80%;
+    transform: none;
+    padding-top:100px;
+    box-sizing: border-box;
+    gap: 10px;
+    max-height: 1000px;
+    overflow-y: auto;
+  }}
+
+  h1{
+    font-size: 45px !important;
+  }
+
+  .home-page .flat-button {
+    display: none;
+  }
+  img {
+    // display: none;
+    overflow: scroll;
+    position: absolute;
+    left: 0 !important;
+    padding-top:380px !important;
+    // height: 560px !important;
+    animation: none;
+  }
+}
+
+@media only screen and (max-width: 320px){
   .tags,
   .home-page h1:before,
   .home-page h1:after {
@@ -118,6 +197,7 @@
   }
   img {
     // display: none;
+    overflow: scroll;
     position: absolute;
     left: 0 !important;
     padding-top:380px !important;
